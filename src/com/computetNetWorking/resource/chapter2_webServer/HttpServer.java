@@ -52,9 +52,9 @@ public class HttpServer implements Runnable{
                 os.write(header.getBytes());
             }
 
-//            br.close();
+            br.close();
             os.close();
-//            connection.close();
+            connection.close();
         }catch (Exception e){
             e.printStackTrace();
         }
